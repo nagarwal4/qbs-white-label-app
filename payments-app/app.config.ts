@@ -15,28 +15,28 @@ const isPreviewEnv = process.env.APP_ENV === "preview";
 
 const AppConfig = {
   name: isDevEnv
-    ? "Quantoz OTC Trading (Dev)"
+    ? "Quantoz Blockchain Solutions (Dev)"
     : isPreviewEnv
-    ? "Quantoz OTC Trading (Test)"
-    : "Quantoz OTC Trading",
+    ? "Quantoz Blockchain Solutions (Test)"
+    : "Quantoz Blockchain Solutions",
   icon: "./assets/icon-qbs.png",
   image: "./assets/splash-qbs.png",
   ios: {
     bundleIdentifier: isDevEnv
-      ? "com.quantoz.qot.dev"
+      ? "com.quantoz.qbs.dev"
       : isPreviewEnv
-      ? "com.quantoz.qot.preview"
-      : "com.quantoz.qot",
+      ? "com.quantoz.qbs.preview"
+      : "com.quantoz.qbs",
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon-qbs.png",
     },
     package: isDevEnv
-      ? "com.quantoz.qot.dev"
+      ? "com.quantoz.qbs.dev"
       : isPreviewEnv
-      ? "com.quantoz.qot.preview"
-      : "com.quantoz.qot",
+      ? "com.quantoz.qbs.preview"
+      : "com.quantoz.qbs",
   },
   // This logic sets the correct env variables to use throughout the app
   // They can be read through the `expo-constants` package (https://docs.expo.dev/guides/environment-variables/#reading-environment-variables)
@@ -68,7 +68,7 @@ const AppConfig = {
 export default () => ({
   expo: {
     name: AppConfig.name,
-    slug: "quantoz-otc-trading",
+    slug: "qbs-test-app",
     version: "1.0.0",
     orientation: "portrait",
     icon: AppConfig.icon,
@@ -107,7 +107,7 @@ export default () => ({
     },
     extra: {
       eas: {
-        projectId: "41e3ec1b-5a80-4c08-9fc1-7a2593f7ada7",
+        projectId: "508103fd-4d90-4213-98d1-045bdcd043b5",
       },
       ...AppConfig.extra,
     },
@@ -122,10 +122,10 @@ export default () => ({
     ],
     // defines the package name of the app
     scheme: isDevEnv
-      ? "quantoz.qot.dev"
+      ? "quantoz.qbs.dev"
       : isPreviewEnv
-      ? "quantoz.qot.preview"
-      : "quantoz.qot",
+      ? "quantoz.qbs.preview"
+      : "quantoz.qbs",
     platforms: ["ios", "android"],
     runtimeVersion: {
       policy: "sdkVersion",

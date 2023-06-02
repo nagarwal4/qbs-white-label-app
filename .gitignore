@@ -239,5 +239,11 @@ mobile/.expo
 .expo
 mobile/.envrc
 mobile/google-service-account.json
+payments-app/coverage
+payments-app/.vscode
+payments-app/.expo
+.expo
+payments-app/.envrc
+payments-app/google-service-account.json
 AzureB2C/custom-policies/output
 /backend/core/src/Core.API/appsettings.Development.json
