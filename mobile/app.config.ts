@@ -81,7 +81,7 @@ export default () => ({
     },
     updates: {
       fallbackToCacheTimeout: 1500,
-      url: "https://u.expo.dev/508103fd-4d90-4213-98d1-045bdcd043b5",
+      url: "https://u.expo.dev/41e3ec1b-5a80-4c08-9fc1-7a2593f7ada7",
     },
     assetBundlePatterns: ["**/*"],
     ios: {
