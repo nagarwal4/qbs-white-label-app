@@ -19,8 +19,8 @@ const AppConfig = {
     : isPreviewEnv
     ? "Quantoz OTC Trading (Test)"
     : "Quantoz OTC Trading",
-  icon: "./assets/icon-qbs.png",
-  image: "./assets/splash-qbs.png",
+  icon: "./assets/icon.png",
+  image: "./assets/splash.png",
   ios: {
     bundleIdentifier: isDevEnv
       ? "com.quantoz.qot.dev"
@@ -30,7 +30,7 @@ const AppConfig = {
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: "./assets/adaptive-icon-qbs.png",
+      foregroundImage: "./assets/adaptive-icon.png",
     },
     package: isDevEnv
       ? "com.quantoz.qot.dev"
@@ -75,7 +75,7 @@ export default () => ({
     userInterfaceStyle: "light",
 
     splash: {
-      image: "./assets/splash-qbs.png",
+      image: "./assets/splash.png",
       resizeMode: "contain",
       backgroundColor: "#ffffff",
     },
